@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Moiz's personal portfolio showcasing web development skills, projects, and services.">
+    <meta name="keywords" content="portfolio, web developer, freelance, projects, services">
+    <meta name="author" content="Moiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+            <!-- Language Dropdown -->
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="ur">Urdu</option>
+            <option value="fr">French</option>
+        </select>
+
+            <!-- Navigation Bar -->
+
+        <div class="logo">Portfolio Website</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home" class="active" onclick="showSection('home')">Home</a></li>
+                <li><a href="#projects" id="projects-title" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#skills" id="skills-title" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#awards" id="awards-title" onclick="showSection('awards')">Awards</a></li>
+                <li><a href="#contact" id="contact-title" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-img">
+                <img src="Abdul Moiz.jpg" alt="Moiz's profile picture">
+            </div>
+            <div class="home-content">
+                <h1 id="greeting">Hi, It's <span>Moiz</span></h1>
+                <h3 class="typing-text">I'm a <span></span></h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+                
+                <div class="social-icons">
+                    <a href="#https://www.linkedin.com/in/hafiz-abdul-moiz"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#https://github.com/moiz200125"><i class="fa-brands fa-github"></i></a>
+                    <a href="#instagram.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#twitter.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="#" class="btn">Hire me</a>
+            </div>
+            
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <!-- Technical Skills -->
+                    <div class="skills-category">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li><strong>Programming Languages:</strong> Python (Pandas, NumPy), SQL, C++, C#, Assembly language</li>
+                            <li><strong>Databases:</strong> MySQL, MongoDB, NoSQL</li>
+                            <li><strong>Data Analysis:</strong> Principal Component Analysis (PCA)</li>
+                            <li><strong>Tools:</strong> Excel, Microsoft Word</li>
+                            <li><strong>Development:</strong> WordPress Development</li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Teamwork and interpersonal skills</li>
+                            <li>Communication skills</li>
+                            <li>Critical thinking</li>
+                            <li>Time management and organizational skills</li>
+                            <li>Continuous learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Project Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-container">
+                    <!-- First Project Video -->
+                    <div class="project-video">
+                        <h3>PaintApp - <span>Completed: July 2024</span></h3>
+                        <video controls width="500" height="280">
+                            <source src="BSCS-22031_PaintApp.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    
+                    <!-- Second Project Video -->
+                    <div class="project-video">
+                        <h3>Ludo - <span>Completed: August 2023</span></h3>
+                        <video controls width="500" height="280">
+                            <source src="LUDO.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section">
+            <div class="container">
+                <h2>Certifications & Awards</h2>
+                <div class="awards-list">
+                    <div class="award-item">
+                        <span class="award-year">2023</span>
+                        <p>Coding Competition - GDSC</p>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2024</span>
+                        <p>Data Science Internship - CodeAlpha</p>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2024</span>
+                        <p>Rookie Game Jam - Mindstorm Studio</p>
+                    </div>
+                    <div>
+                        <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="form-layout">
+                    <h2>Contact Me</h2>
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Abdul Moiz 2024</p>
+    </footer>
+    
+</body>
+
+</html>
